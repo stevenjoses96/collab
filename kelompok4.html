@@ -5,8 +5,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelompok 4</title>
 </head>
+
+    <style>
+        /* Pengaturan Dasar */
+        body{
+        background-color: gainsboro;
+        width: 100dvw;
+        height: 300dvh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+
+    }
+    header{
+        flex:2;
+        background-color:aquamarine;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        flex: 10;
+    }
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4; /* Warna background untuk kontras (opsional) */
+        }
+
+        /* Styling Footer Utama */
+        .footer {
+            background-color: #0c1c15; /* Warna hijau gelap sesuai gambar */
+            color: #d1d5d3; /* Warna teks abu-abu terang */
+            padding: 60px 20px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        /* Kolom Footer */
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* Kolom Brand & Newsletter (Kiri) */
+        .brand-col h2 {
+            color: #ffffff;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+
+        .brand-col p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 300px;
+        }
+
+        .newsletter h3 {
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .newsletter form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+        }
+
+        .newsletter input[type="email"],
+        .newsletter button {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .newsletter input[type="email"] {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .newsletter input[type="email"]:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(255,255,255,0.5);
+        }
+
+        .newsletter button {
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter button:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Kolom Links & Customer Care (Tengah & Kanan) */
+        .footer-col h3 {
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #d1d5d3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+        }
+
+        .footer-col ul li i {
+            color: #d1d5d3;
+            width: 16px;
+        }
+
+        /* Bagian Bawah Footer (Copyright) */
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 60px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .footer-bottom p {
+            margin-bottom: 5px;
+        }
+
+        .footer-bottom a {
+            color: #d1d5d3;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
 <body>
-    <h>Kasur terbang</h>
-    <h1>Bantal</h1>
+    <header>
+        <h1>ALPHA BED</h1>
+        <nav></nav>
+
+    </header>
+    <main>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Kolom 1: Brand & Newsletter -->
+            <div class="footer-col brand-col">
+                <h2>ALPHA BED</h2>
+                <p>Tidur berkualitas untuk hidup yang lebih berkualitas. Menghadirkan kenyamanan premium dengan desain elegan dan daya tahan terbaik.</p>
+                
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <form action="#" method="POST">
+                        <input type="email" placeholder="Masukkan email Anda" required>
+                        <button type="submit">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Kolom 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 3: Customer Care -->
+            <div class="footer-col">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +62 8xx xxxx xxxx</li>
+                    <li><i class="fa-solid fa-envelope"></i> support@alphabed.com</li>
+                    <li><i class="fa-regular fa-clock"></i> Senin - Sabtu | 09.00 - 18.00</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright & Legal -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alpha Bed. All Rights Reserved.</p>
+            <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms & Conditions</a></p>
+        </div>
+    </footer>
+
 </body>
 </html>
+</body>
+</html>
+    </footer>
+
+    <header><nav></nav></header>
+    
+    <main>
+
+    </main>
+
